@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Libre+Baskerville&family=Secular+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Secular One", sans-serif;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0);
+  flex-wrap: wrap;
+}
+
+h1 {
+  position: relative;
+  font-size: 4rem;
+  -webkit-text-stroke: 0.1rem #fff;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/* h1::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  content: attr(data-text);
+  color: rgb(1, 255, 255);
+  -webkit-text-stroke: 0 #000;
+  border-right: 2px solid rgb(1, 255, 255);
+  overflow: hidden;
+  animation: typeText 5s linear 5;
+}
+@keyframes typeText {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+} */
+
+.gameInput {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 2rem;
+  margin: 2%;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+}
+
+.p1-form,
+.p2-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  flex: 1 1 100%;
+}
+
+.p1-form label {
+  margin: 0 1%;
+}
+#playerOne,
+#playerTwo {
+  margin-left: 1%;
+}
+
+.gameDisplay {
+  display: none;
+  flex: 1 1 100%;
+}
+.gameStatus {
+  font-size: 2.5rem;
+  padding: 1% 0;
+  color: #fff;
+  text-align: center;
+}
+
+.btn-container {
+  margin: 2% 0;
+  text-align: center;
+  flex: 1 1 100%;
+}
+
+button,
+#changeName {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.35rem 1.2rem;
+  border: 0.1rem solid #fff;
+  margin: 0 0.3rem;
+  text-decoration: none;
+  color: #fff;
+  background: transparent;
+  text-align: center;
+}
+
+button:hover,
+#changeName:hover {
+  color: #000;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cell {
+  color: white;
+  display: flex;
+  font-size: 5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+}

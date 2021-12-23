@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tic-Tac-Toe</title>
+  </head>
+
+  <body>
+    <h1 data-text="Tic Tac Toe">Tic Tac Toe</h1>
+    <form action="" class="gameInput">
+      <div class="p1-form">
+        <label for="playerOne">P1 Name</label>
+        <input
+          type="text"
+          id="playerOne"
+          onfocus="this.value=''"
+          value="Player One"
+          autocomplete="off"
+        />
+        <label for="playerTwo">P2 Name</label>
+        <input
+          type="text"
+          id="playerTwo"
+          onfocus="this.value=''"
+          value="Player Two"
+          autocomplete="off"
+        />
+        <label for="cpuMode">CPU</label>
+        <input class="mode" id="cpuMode" type="checkbox" />
+      </div>
+      <input id="changeName" type="submit" value="Update Name" />
+    </form>
+
+    <div class="gameDisplay">
+      <p class="gameStatus">Player One</p>
+      <div class="row">
+        <div class="cell" id="0" value="0"></div>
+        <div class="cell" id="1" value="1"></div>
+        <div class="cell" id="2" value="2"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="3" value="3"></div>
+        <div class="cell" id="4" value="4"></div>
+        <div class="cell" id="5" value="5"></div>
+      </div>
+      <div class="row">
+        <div class="cell" id="6" value="6"></div>
+        <div class="cell" id="7" value="7"></div>
+        <div class="cell" id="8" value="8"></div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button class="start-btn" onclick="game.gameStart()">Start</button>
+      <button class="reset-btn" onclick="game.gameReset()">Reset</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
